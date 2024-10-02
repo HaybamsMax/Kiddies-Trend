@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+/*style the body*/
+body{
+    font-family: Arial;
+    margin: 0;
+    background-color: #f5f5f5;
+    
+}
+
+/*header/logo Title*/
+.header{
+    padding: 60px;
+    text-align: center;
+    background-color: #f2c464;
+    color:#032b44;
+}
+
+/*style the top navigation bar*/
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+
+/*style the navigation bar links*/
+.navbar a {
+    color: skyblue;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*change color on hover*/
+.navbar a:hover {
+    background-color: #c7b8ea;
+    color: black;
+}
+
+/*column container*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*creae two unequal columns thta sits next to each other*/
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    
+}
+
+/*main column*/
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/*fake image just for this example*/
+img {
+    width: 60%;
+    padding: 10px;
+  
+}
+
+/*footer*/
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+/*responsive layout-when the screen is less than 700px wide,make the two columns stack on top of each other instead of next to each other*/
+@media screen and (max-width: 700px) {
+    .row, .navbar { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <!--Note-->
+    <div style="background-color: #d3d3d3;padding: 5px;">
+<h4 style="text-align: center;">Kiddies Ready To Wear.</h4></div>
+    
+
+    <!--Header-->
+    <div class="header">
+        <h1>Kiddies Mini Trend</h1>
+        <p>Fashion for little Fashionistas.</p>
+    </div>
+
+    <!--Navigation bar-->
+<div class="navbar">
+<a href="#">Menu</a>
+<a href="#">Information</a>
+<a href="#">Collections</a>
+<a href="#">Customer Service</a>
+</div>
+
+<!--The flexible grid content-->
+<div class="row">
+    <!--div side-->
+<div class="side">
+    <h2>About Us</h2>
+    <h5>Kiddies Mini Trend:</h5>
+    <!--image div-->
+<div><img src="./fashion/machine (1).jpg" alt=""></div>
+<p>Welcome to our world of adorable attire, where fashion needs fun for the little ones!</p> <h3>Our Art Piece</h3> <p>Our Kiddies ready to wear collection is designed to make dressing up a breeze with comfortable, stylish and playful outfit for kids who love to explore create and dream big from casual everday wear to speacial occasions dresses and suits, our collections is carefully crafted to bring out the unique personality of your tiny trendsetter.</p>
+<div><p><b>Shop by Age</b></p><img src="./fashion/boy.jpg" alt=""></div><br>
+<div><p><b>Shop by category</b></p><img src="./fashion/shelf.jpg" alt=""></div><br>
+<div><p><b>Shop by occasion</b></p><img src="./fashion/girly.jpg" alt=""></div>
+</div>
+<!--main div-->
+<div class="main">
+    <h2>Comfy clothes for everyday wear</h2>
+    <h5>Smuggle up in our soft and cozy everyday wear.</h5>
+<!--image div-->
+    <div><img src="./fashion/BoyCasual.jpg" alt=""></div>
+    <p>Perfect For</p>
+    <p><ul><li>Lounging around the house</li>
+    <li>Running errands</li><li>smuggling for story times, etc.
+    </li>
+</ul></p> <p>our comfy clothes come in range of styles, from soft tees and tanktops, cozy sweat pant and many more.</p><br>
+<h2>Dressy outfits for special Events</h2>
+    <h5>Elevate your child lifestyle for special occasions with our stunning dressy outfits! </h5>
+    <div><img src="./fashion/girltrendy.jpg" alt=""></div>
+    <p>Make a lasting impression of</p>
+    <p><ul><li>Weddings</li><li>Birthday parties</li><li>Formal Events</li><Li>Photo shoot, etc.</Li></ul></p>
+<p>Our Outfits feature from elegant fabric materials like:satin, velvet and many more</p>
+</div>
+</div>
+<!--footer-->
+<div class="footer">
+    <h3>Browse through our colorful and vibrant range to find the perfect fit for your mini-me's next adventure.</h3><br>
+        <h4> Contact us: <a href="#">@adejuwonaderonke@gmail.com</a> or visit our <span><a href="#">Information</a> </span> for more details!</h4>
+</div>
+
+</body>
+</html>
